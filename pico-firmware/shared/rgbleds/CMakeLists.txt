@@ -1,0 +1,5 @@
+add_library(rgbleds STATIC rgbleds.c)
+target_include_directories(rgbleds PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+pico_generate_pio_header(rgbleds ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio)
+target_link_libraries(rgbleds PUBLIC pico_stdlib hardware_pio)
+set_target_properties(rgbleds PROPERTIES PUBLIC_HEADER rgbleds.h)
