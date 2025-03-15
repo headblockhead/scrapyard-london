@@ -9,7 +9,7 @@ It's written in lua on my NixOS laptop.
 
 
 ## Building
-> [!INFO]
+> ![INFO]
 > You need the Playdate SDK correctly installed
 1. Run either the build_and_run.sh (On linux) or the ps1 alternative
 2. Build
